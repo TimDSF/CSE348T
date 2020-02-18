@@ -4,13 +4,46 @@ This is the official git repository of Computer Science and Engineering 348: Alg
 
 ## Topics Covered in this Seminar
 
-- Data Structure 
-	_ Standard Templates Library
-		_ LinkedList
-		_ Stack
-		_ Queue
-		_ PriorityQueue
-		_ HashSet
-		_ HashMap
-	_ Optimization
-		_ 
+* Data Structure 
+	* Standard Templates Library
+		* LinkedList
+		* Stack
+		* Queue
+		* PriorityQueue
+		* HashSet
+		* HashMap
+		* AVL Tree
+	* Optimization
+		* Prefix-Sum
+		* Disjoint-Set (Union Find) 
+		* Fenwick Tree (Binary Indexed Tree)
+		* Segment Tree
+		* Tries
+* Solution Paradigms
+	* Brute Force
+	* Recursion
+	* Greedy Algorithm
+	* Dynamic Programming
+	* Divide and Conquer
+	* Sliding Window
+* Graph Theory
+	* Searching and Traverse
+		* Breath-First Search
+		* Depth-First Search
+	* Minimum-Spanning Tree
+		* Prim's Algorithm
+		* Kruskal's Algorithm
+	* Shortest Path
+		* Dijkstra's Algorithm / A*
+		* Bellman-Ford Algorithm / SPFA
+		* Floyd-Warshall Algorithm
+	* Network Flow
+		* Max-Flow
+		* Min-Cut
+* Mathematics
+	* Probability
+	* Combinatorics
+	* Number Theory
+	* Computational Geometry
+* String Processing
+	* Knuth-Morris-Pratt Algorithm
