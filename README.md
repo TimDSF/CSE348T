@@ -2,6 +2,8 @@
 
 This is the official git repository of **Computer Science and Engineering 348: Algorithm NonAnalysis course funded by Association for Computing Machinery of Washington University in St. Louis** for the aim of preparing for ___International Collegiate Programming Contest___, also known as ___CSE348:ANA_WUACM_ICPC___, whatever that means.
 
+For practicing in your own time, we recommend https://codeforces.com, and https://open.kattis.com.
+
 ## Schedule - Saturday 12PM - 3PM
 
 1. Feb/22 - Data Structure
@@ -12,7 +14,7 @@ This is the official git repository of **Computer Science and Engineering 348: A
 6. Apr/04 - Divide and Conquer
 7. Apr/11 - Dynamic Programming
 8. Apr/18 - Dynamic Programming
-9. Apr/25 - WUPC
+9. Apr/25 - Practice Contest
 
 ## Topics Covered in this Seminar
 * Basics
