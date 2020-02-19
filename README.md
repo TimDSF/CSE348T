@@ -1,6 +1,6 @@
 # CSE348_AlgorithmNonAnalysis
 
-This is the official git repository of **Computer Science and Engineering 348: Algorithm NonAnalysis course funded by Association for Computing Machinery of Washington University in St. Louis** for the aim of preparing for __International Collegiate Programming Contest__, also known as ___CSE348:ANA_WUACM_ICPC___, whatever that means.
+This is the official git repository of **Computer Science and Engineering 348: Algorithm NonAnalysis course funded by Association for Computing Machinery of Washington University in St. Louis** for the aim of preparing for ___International Collegiate Programming Contest___, also known as ___CSE348:ANA_WUACM_ICPC___, whatever that means.
 
 ## Schedule - Saturday 12PM - 3PM
 
