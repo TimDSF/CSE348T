@@ -4,6 +4,6 @@ Have you ever imagined to use ***Dynamic Programming*** on a circular interval t
 
 Problems reviewed during this week's practice session (***Saturday Feb/22 12PM - 3PM***):
 
-Easy: https://open.kattis.com/problems/flagquiz
-Medium: https://leetcode.com/problems/top-k-frequent-elements/
-Hard: http://poj.org/problem?id=3614
+Easy: https://open.kattis.com/problems/flagquiz\
+Medium: https://leetcode.com/problems/top-k-frequent-elements/\
+Hard: http://poj.org/problem?id=3614\
