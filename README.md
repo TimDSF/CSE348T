@@ -8,8 +8,8 @@ For practicing in your own time, we recommend https://codeforces.com for more co
 
 ## Schedule - Saturday 12PM - 3PM
 
-1. Feb/22 - Data Structure
-2. Mar/07 - Intro to OI + Binary Search + Greedy 
+1. Feb/22 - Data Structure + Standard Template Library
+2. Mar/07 - Binary Search + Greedy 
 3. Mar/14 - Graph Theory
 4. Mar/21 - Graph Theory
 5. Mar/28 - Graph Theory
