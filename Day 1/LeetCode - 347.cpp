@@ -1,10 +1,14 @@
-#include <map>
 #include <cstdio>
 #include <vector>
+#include <queue>
+#include <unordered_map>
 using namespace std;
 
 int main(){
-	int n=nums.	size(),i;
+	vector<int> nums;
+	int n,i,k,tmp;
+	scanf("%d%d",&n,&k);
+	for (i=0;i<n;i++) scanf("%d",&tmp),nums.push_back(tmp);
 	vector<int> tops;
 	unordered_map<int,int> freq;
 	unordered_map<int,int>::iterator it;
