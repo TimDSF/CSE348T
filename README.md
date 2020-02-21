@@ -4,7 +4,7 @@ This is the official git repository of **Computer Science and Engineering 348: A
 
 However, this is also the best source for preparing for **Technical Interviews** because we will cover different _solution paradigms_, _data structures_, and _optimizations_ that helps you solve **Interview Problems** with less time and better performance.
 
-For practicing in your own time, we recommend https://codeforces.com for more competitive problems. https://open.kattis.com and https://leetcode.com are also good sources for a more balanced practice between ___competitive___ and ___interview___. 
+For practicing in your own time, we recommend https://codeforces.com for more ___competitive___ problems. https://open.kattis.com and https://leetcode.com are also good sources for a more balanced practice between ___competitive___ and ___interview___. 
 
 ## Schedule - Saturday 12PM - 3PM
 
