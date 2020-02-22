@@ -1,4 +1,4 @@
-// Copyright @ Tim Dong2020
+// Copyright @ Tim Dong 2020
 
 #include <cstdio>
 #include <vector>
