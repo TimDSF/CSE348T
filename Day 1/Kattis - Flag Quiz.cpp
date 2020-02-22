@@ -11,9 +11,11 @@ int main(){
 	int i,j,k,l,mn;
 	int a[100];
 	string line,tmp;
+	
 	getline(cin,line);
 	scanf("%d",&n);
 	cin.get();
+	
 	for (i=0;i<n;++i){
 		getline(cin,line);
 		line+=",";
@@ -30,6 +32,7 @@ int main(){
 			}
 		}
 	}
+	
 	for (i=0;i<n;++i){
 		mn=0;
 		for (j=0;j<n;++j){
@@ -42,6 +45,7 @@ int main(){
 		}
 		dif[i]=mn;
 	}
+	
 	mn=0x7fffffff;
 	for (i=0;i<n;++i){
 		if (dif[i]<mn){
@@ -52,6 +56,7 @@ int main(){
 			ans.push_back(i);
 		}
 	}
+	
 	for (i=0;i<ans.size();++i){
 		for (j=0;j<v[i].size();++j){
 			cout<<v[ans[i]][j];
