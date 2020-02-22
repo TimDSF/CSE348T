@@ -1,3 +1,5 @@
+// Copyright @ Tim Dong2020
+
 #include <cstdio>
 #include <string>
 #include <vector>
