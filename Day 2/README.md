@@ -1,4 +1,4 @@
-# Technical Interview / ICPC Practice Session: Day Two (***Saturday Mar/7 12PM - 3PM***)
+# Technical Interview / ICPC Practice Session: Day Two (***Saturday Mar/21 12PM - 3PM***)
 
 Today is the day for being ***Greedy*** (and ***Divide***d ***and Conquer***ed). 
 
