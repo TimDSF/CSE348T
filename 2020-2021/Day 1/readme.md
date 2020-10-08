@@ -12,7 +12,7 @@ Hello, everyone. This is our beloved practice session. Welcome! Last semester, d
 7. priority_queue
 
 ## Sample Problems
-Problems reviewed during this week's practice session: (since we figured out that LeetCode is the most popular platform, we will stick to it this session)
+Problems reviewed during this week's practice session: (since we figured out that LeetCode is the most popular platform, we will stick to it for this session)
 
 ### LeetCode - 347: Top K Frequent Elements (Easy)
 https://leetcode.com/problems/top-k-frequent-elements/ 
