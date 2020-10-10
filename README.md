@@ -1,22 +1,13 @@
 # CSE348_AlgorithmNonAnalysis
 
-This is the official git repository of **Computer Science and Engineering 348: Algorithm NonAnalysis course funded by Association for Computing Machinery of Washington University in St. Louis** for the aim of preparing for ___International Collegiate Programming Contest___, also known as ___CSE348:ANA_WUACM_ICPC___, whatever that means.
+## Introduction (trivial)
+This is the official git repository of **Computer Science and Engineering 348: Algorithm NonAnalysis course “funded” by Association for Computing Machinery of Washington University in St. Louis**, preparing for ___International Collegiate Programming Contest___, also known as ___CSE348:ANA_WUACM_ICPC___.  
 
 However, this is also the best source for preparing for **Technical Interviews** because we will cover different _solution paradigms_, _data structures_, and _optimizations_ that helps you solve **Interview Problems** with less time and better performance.
 
-For practicing in your own time, we recommend https://codeforces.com for more ___competitive___ problems. https://open.kattis.com and https://leetcode.com are also good sources for a more balanced practice between ___competitive___ and ___interview___. 
+For practicing in your own time, we recommend https://codeforces.com for more ___competitive___ problems. https://open.kattis.com and https://leetcode.com are also good sources for a more balanced practice between ___competitiveness___ and ___interview___.  
 
-## Schedule - Saturday 12PM - 3PM
-
-1. Feb/22 - Data Structure + Standard Template Library
-2. Mar/21 - Binary Search + Greedy + Memorization 
-3. Mar/28 - Graph Theory
-4. Mar/04 - Graph Theory
-5. Apr/11 - Divide and Conquer
-6. Apr/18 - Dynamic Programming
-7. Apr/25 - Practice Contest
-
-## Topics Covered in this Seminar
+## Topics Covered in this Seminar (ideally)
 * Basics
 	* Simulation / Implementation
 * Data Structure 
@@ -69,6 +60,7 @@ For practicing in your own time, we recommend https://codeforces.com for more __
 	* Computational Geometry
 * String Processing
 	* Knuth-Morris-Pratt Algorithm
+	* Aho–Corasick Algorithm
 * Optimization (ad hoc)
 	* Bit-mask Optimization
 	* Precomputation
