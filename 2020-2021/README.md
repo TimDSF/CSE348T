@@ -4,9 +4,9 @@
 
 ### Basic Topics
 1. Oct/10 - Data Structure + Standard Template Library
-2. Oct/17 - Binary Search + Greedy 
-3. Oct/24 - Dynamic Programming
-4. Oct/31 - Divide and Conquer
+2. Oct/17 - Binary Search + Binary Lifting + Bitmask 
+3. Oct/24 - Dynamic Programming + Divide and Conquer + Greedy
+4. Oct/31 - Prefix Sum + Binary Index Tree + Segment Tree
 5. Nov/07 - Graph Theory
 6. Nov/14 - Practice Contest
 
