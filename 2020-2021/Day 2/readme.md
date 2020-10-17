@@ -15,8 +15,6 @@ Fast Exponentiation (from the meme)
 BIT - Binary Index Tree  
 ST - Sparse Table  
 ST - Segment Tree  
-  
-*Sample Code Uploaded in the GitHub Repository.*  
 
 ## References
 https://codeforces.com/blog/entry/18169
