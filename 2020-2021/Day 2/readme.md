@@ -6,11 +6,12 @@ This week, in response to a request, I will cover bitmask as the topic of the th
 ## Sample Problems
 Problems reviewed during this week's practice session:
 
-### (Easy - Binary Search)
+### (Median - Binary Search)
 https://mcpc19.kattis.com/problems/convoy
-### (Medium - Bitmask)
-https://wustl.edu
-### (Hard - RMQ) 
+### (Hard - Bitmask)
+https://leetcode.com/problems/maximum-students-taking-exam/
+### (Hard - Binary Lifting)
+Fast Exponentiation (from the meme)
 BIT - Binary Index Tree
 ST - Sparse Table
 ST - Segment Tree
@@ -19,5 +20,3 @@ ST - Segment Tree
 
 ## References
 https://codeforces.com/blog/entry/18169
-https://oi-wiki.org/basic/binary-lifting/
-https://oi-wiki.org/math/bit/
