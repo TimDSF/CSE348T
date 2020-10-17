@@ -6,12 +6,14 @@ This week, in response to a request, I will cover bitmask as the topic of the th
 ## Sample Problems
 Problems reviewed during this week's practice session:
 
-### (Easy)
+### (Easy - Binary Search)
+https://mcpc19.kattis.com/problems/convoy
+### (Medium - Bitmask)
 https://wustl.edu
-### (Medium)
-https://wustl.edu
-### (Hard) 
-https://wustl.edu
+### (Hard - RMQ) 
+BIT - Binary Index Tree
+ST - Sparse Table
+ST - Segment Tree
 
 *Sample Code Uploaded in the GitHub Repository.*
 
