@@ -6,12 +6,13 @@ This week, in response to a request, I will cover bitmask as the topic of the th
 ## Sample Problems
 Problems reviewed during this week's practice session:
 
-### (Median - Binary Search)
+### Convoy (Median - Binary Search)
 https://mcpc19.kattis.com/problems/convoy  
-### (Hard - Bitmask)
+### Maximum Students Taking Exam (Hard - Bitmask)
 https://leetcode.com/problems/maximum-students-taking-exam/  
-### (Hard - Binary Lifting)
+### Fast Exponentiation (Easy - Binary Lifting)
 Fast Exponentiation (from the meme)  
+### RMQ - Range Maximum/Minimum Query (Hard - Binary Lifting)
 BIT - Binary Index Tree  
 ST - Sparse Table  
 ST - Segment Tree  
