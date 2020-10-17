@@ -12,7 +12,8 @@ https://mcpc19.kattis.com/problems/convoy
 https://leetcode.com/problems/maximum-students-taking-exam/  
 ### Fast Exponentiation (Easy - Binary Lifting)
 Fast Exponentiation  
-![Oops, My Meme Missing](https://drive.google.com/uc?export=view&id=1nKB5cZ7kVKlLhQ8jTvNMgKP3ikM5TVE9|width=48)
+![Oops, My Meme Missing](https://drive.google.com/uc?export=view&id=1nKB5cZ7kVKlLhQ8jTvNMgKP3ikM5TVE9)
+<img src="https://drive.google.com/uc?export=view&id=1nKB5cZ7kVKlLhQ8jTvNMgKP3ikM5TVE9" width="48">
 ### RMQ - Range Maximum/Minimum Query (Hard - Binary Lifting)
 BIT - Binary Index Tree  
 ST - Sparse Table  
