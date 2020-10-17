@@ -3,6 +3,7 @@ using namespace std;
 
 // a: array of numbers, [0,n)
 // s: sum   over [l,r) at index i, index from 1.
+// d: delta over [l,r) at index i, index from 1.
 int n,m,a[100001],s[400001],d[400001]; 
 
 // initialize s[i] to sum of a[l,r)
@@ -22,9 +23,32 @@ void build(int l,int r,int i){
 int sum(int fm,int to,int l,int r,int i){
 	if (fm<=l && r<=to) return s[i];
 	int m=(l+r)/2,ans=0;
+	if (d[i]){
+		s[i*2]+=d[i]*(m-l);d[i*2]+=d[i];
+		s[i*2+1]+=d[i]*(r-m);d[i*2+1]+=d[i];
+		d[i]=0;
+	}
 	if (fm<m) ans+=sum(fm,to,l,m,i*2);
 	if (m<to) ans+=sum(fm,to,m,r,i*2+1);
 	return ans;
+}
+
+// calculate: sum of a[fm,to)
+// current node: s[i] of sum [l,r)
+void update(int fm,int to,int dl,int l,int r,int i){
+	if (fm<=l && r<=to){
+		s[i]+=dl*(r-l);d[i]+=dl;
+		return;
+	}
+	int m=(l+r)/2;
+	if (d[i]){
+		s[i*2]+=d[i]*(m-l);d[i*2]+=d[i];
+		s[i*2+1]+=d[i]*(r-m);d[i*2+1]+=d[i];
+		d[i]=0;
+	}
+	if (fm<m) update(fm,to,dl,l,m,i*2);
+	if (m<to) update(fm,to,dl,m,r,i*2+1);
+	s[i]=s[i*2]+s[i*2+1];
 }
 
 int main(){
@@ -34,6 +58,18 @@ int main(){
 		scanf("%d",&a[i]);
 	}
 	build(0,n,1);
+
+	scanf("%d",&m);
+	for (i=0;i<m;++i){
+		scanf("%d%d",&fm,&to); // input is [ , ]
+		printf("%d\n",sum(fm,to+1,0,n,1));
+	}
+
+	scanf("%d",&m);
+	for (i=0;i<m;++i){
+		scanf("%d%d%d",&fm,&to,&dl); // input is [ , ]
+		update(fm,to+1,dl,0,n,1);
+	}
 
 	scanf("%d",&m);
 	for (i=0;i<m;++i){
