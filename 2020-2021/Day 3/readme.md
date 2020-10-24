@@ -14,4 +14,5 @@ https://leetcode.com/problems/binary-tree-maximum-path-sum/
 https://leetcode.com/problems/graph-connectivity-with-threshold/  
 
 # Then?
-After the session, for those of you who are interested, let's do a live competition on https://leetcode.com/contest/weekly-contest-212. ***We don't cheat!***
+After the session, for those of you who are interested, let's do a live competition on https://leetcode.com/contest/weekly-contest-212.  
+***We don't cheat!***
