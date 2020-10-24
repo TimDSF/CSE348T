@@ -1,4 +1,4 @@
-# Technical Interview / ICPC Practice Session: Day One (***Saturday Oct/10 7PM - 9PM***)
+# Technical Interview / ICPC Practice Session: Day Two (***Saturday Oct/17 8PM - 10PM***)
 
 ## Introduction
 This week, in response to a request, I will cover bitmask as the topic of the third question. So, to make the session a ***bit*** more organized, we are talking about ***bits***! Specifically, ***Binary Search***, ***Binary Lifting***, and ***Bitmask***, everything ***bit***tly. 
