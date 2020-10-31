@@ -21,6 +21,5 @@ https://naq19.kattis.com/problems/researchproductivityindex
 
 ## Footnote 
 <a id="f1">[1](#a1)</a> Hopefully we can finish before 9:30PM so that we can do LeetCode weekly competition real-time as practice.  
-<a id="f2">[2](#a2)</a> LeetCode standards: Easy => Median => Hard;  
-&nbsp&nbsp&nbspCompetition standards: Check-in => Easy => Fun => Interesting => Awesome => Fantastic.  
+<a id="f2">[2](#a2)</a> __LeetCode__: Easy => Median => Hard; __Competition__: Check-in => Easy => Fun => Interesting => Awesome => Fantastic.  
 <a id="f3">[3](#a3)</a> Refer to above [2](#f2).
