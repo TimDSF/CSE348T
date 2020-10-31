@@ -18,5 +18,5 @@ https://naq19.kattis.com/problems/stopcounting
 #### Research Productivity Index (Harder - Dynamic Programming)
 https://naq19.kattis.com/problems/researchproductivityindex  
 
-<b id="f1">1</b> Hopefully we can finish before 9:30PM so that we can do LeetCode weekly competition real-time as practice. [↩](#a1)
-<b id="f2">1</b> Harder than hard in terms of LeetCode standards, median for competitions. Harder are more interesting ones! Hope you enjoy it. [↩](#a2)
+<b id="f1">[1]</b> Hopefully we can finish before 9:30PM so that we can do LeetCode weekly competition real-time as practice. [↩](#a1)  
+<b id="f2">[2]</b> Harder than hard in terms of LeetCode standards, median for competitions. Harder are more interesting ones! Hope you enjoy it. [↩](#a2)  
