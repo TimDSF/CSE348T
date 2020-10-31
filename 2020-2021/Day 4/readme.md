@@ -1,4 +1,4 @@
-# Technical Interview / ICPC Practice Session: Day Four (***Saturday Oct/31 8PM - 9:30PM[^1]***)
+# Technical Interview / ICPC Practice Session: Day Four (***Saturday Oct/31 8PM - 9:30PM<sup>1</sup>***)
 
 ## Introduction
 Let's DP, cuz we are lazy. No need for repeated work, also, no need for more introduction.
@@ -19,6 +19,6 @@ https://naq19.kattis.com/problems/stopcounting
 https://naq19.kattis.com/problems/researchproductivityindex  
 
 
-[^1]: Hopefully we can finish before 9:30PM so that we can do LeetCode weekly competition real-time as practice.
-[^2]: Harder than hard in terms of LeetCode standards, median for competitions. Harder are more interesting ones! Hope you enjoy it.
-[^3]: Guess why!
+[1]: Hopefully we can finish before 9:30PM so that we can do LeetCode weekly competition real-time as practice.
+[2]: Harder than hard in terms of LeetCode standards, median for competitions. Harder are more interesting ones! Hope you enjoy it.
+[3]: Guess why!

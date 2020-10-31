@@ -18,21 +18,21 @@ int main(){
     scanf("%d",&n);
     for (i=1;i<=n;i++){
         scanf("%d",&k);
-        p[i]=k/100.0;
+        p[i] = k/100.0;
     }
     
     sort(p+1,p+n+1,cmp);
 
-    f[1][0]=1-p[1];
-    f[1][1]=p[1];
-    max=f[1][1];
+    f[1][0] = 1 - p[1];
+    f[1][1] = p[1];
+    max = f[1][1];
 
     for (i=2;i<=n;i++){
         tmp=0;
-        f[i][0]=f[i-1][0]*(1-p[i]);
+        f[i][0] = f[i-1][0] * (1-p[i]);
 
         for (j=1;j<=i;j++){
-            f[i][j]=f[i-1][j-1]*p[i]+f[i-1][j]*(1-p[i]);
+            f[i][j] = f[i-1][j-1] * p[i] + f[i-1][j] * (1-p[i]);
             tmp += f[i][j] * pow(j,(double)j/i);
         }
 
