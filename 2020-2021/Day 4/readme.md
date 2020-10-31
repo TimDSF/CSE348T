@@ -1,4 +1,4 @@
-# Technical Interview / ICPC Practice Session: Day Four (***Saturday Oct/31 8PM - 10PM***)
+# Technical Interview / ICPC Practice Session: Day Four (***Saturday Oct/31 8PM - 9:30PM[^1]***)
 
 ## Introduction
 Let's DP, cuz we are lazy. No need for repeated work, also, no need for more introduction.
@@ -13,9 +13,11 @@ https://leetcode.com/problems/best-team-with-no-conflicts/
 https://leetcode.com/problems/interleaving-string/  
 
 ### Kattis
-#### Stop Counting (Harder[^1] - Dynamic Programming)
+#### Stop Counting (Harder[^2] - Dynamic Programming)
 https://naq19.kattis.com/problems/stopcounting  
 #### Research Productivity Index (Harder - Dynamic Programming)
 https://naq19.kattis.com/problems/researchproductivityindex  
 
-[^1]: Harder than hard in terms of LeetCode standards, median for competitions. Harder are more interesting ones! Hope you enjoy it.
+
+[^1]: Hopefully we can finish before 9:30PM so that we can do LeetCode weekly competition real-time as practice.
+[^2]: Harder than hard in terms of LeetCode standards, median for competitions. Harder are more interesting ones! Hope you enjoy it.
