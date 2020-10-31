@@ -1,7 +1,7 @@
 # Technical Interview / ICPC Practice Session: Day Four (***Saturday Oct/31 8PM - 9:30PM<sup id="a1">[1](#f1)</sup>***)
 
 ## Introduction
-Let's DP, cuz we are lazy. No need for repeated work, also, no need for more introduction.
+Let's DP, cuz we are lazy – there is no need for repeated work. (No need for introduction)
 
 ## Sample Problems
 Problems reviewed during this week's practice session:
