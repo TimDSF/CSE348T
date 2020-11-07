@@ -13,9 +13,9 @@ https://leetcode.com/problems/redundant-connection/submissions/
 https://leetcode.com/problems/redundant-connection-ii/  
 
 ### Kattis
-#### Slow Leak (Harder<sup id="a2">[2](#f2)</sup> - Floyd-Warshall + SPFA)
+#### Slow Leak (Interesting<sup id="a2">[2](#f2)</sup> - Floyd-Warshall + SPFA)
 https://naq19.kattis.com/problems/slowleak  
 
 ## Footnote 
 <b id="f1">[1](#a1)</b> Hopefully we can finish before 9:30PM so that we can do LeetCode weekly competition real-time as practice.  
-<b id="f2">[2](#a2)</b> Harder than hard in terms of LeetCode standards, median for competitions. Harder are more interesting ones! Hope you enjoy it.  
+<a id="f2">[2](#a2)</a> __LeetCode__: Easy => Median => Hard; __Competition__: Check-in => Easy => Fun => Interesting => Awesome => Fantastic. 
