@@ -10,13 +10,13 @@ Problems reviewed during this week's practice session:
 #### There is no LeetCode today as well 
 
 ### Kattis<sup id="a2">[2](#f2)</sup>
-#### Diagonal Cut (3.8(Easy) - Floyd-Warshall + SPFA)
+#### Diagonal Cut (3.8(Easy) - Math)
 https://open.kattis.com/problems/diagonalcut
-#### Dragon Ball (4.0(Fun) - Floyd-Warshall + SPFA)
+#### Dragon Ball (4.0(Fun) - Dijkstra + Permutation)
 https://open.kattis.com/problems/dragonball1
-#### Crazed Boar (5.9(Interesting) - Floyd-Warshall + SPFA)
+#### Crazed Boar (5.9(Interesting) - Geometry + Interval Covering)
 https://open.kattis.com/problems/crazedboar
-#### Farming Mars (6.2(Awesome) - Floyd-Warshall + SPFA)
+#### Farming Mars (6.2(Awesome) - Segment Tree + Binary Search)
 https://open.kattis.com/problems/farmingmars
 
 ## Footnote 
