@@ -1,13 +1,13 @@
-# Technical Interview / ICPC Practice Session: Day Six (***Saturday Nov/14 8PM - 10:00PM***)
+# Technical Interview / ICPC Practice Session: Day Seven (***Saturday Nov/21 8PM - 10:00PM***)
 
 ## Introduction
-Here is the link for the contest: https://open.kattis.com/contests/dtyy4b. Let us ***smash*** the questions.
+Here is the link for the contest: https://open.kattis.com/contests/dtyy4b. Let us ***discuss*** the questions.
 
 ## Sample Problems
 Problems reviewed during this week's practice session:
 
 ### LeetCode<sup id="a1">[1](#f1)</sup>
-#### There is no LeetCode today 
+#### There is no LeetCode today as well 
 
 ### Kattis<sup id="a2">[2](#f2)</sup>
 #### Diagonal Cut (3.8(Easy) - Floyd-Warshall + SPFA)
