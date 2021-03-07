@@ -1,4 +1,4 @@
-// Credit: Yiheng Yao
+// Credit: Yiheng Yao & Tim Dong
 #include<iostream>
 #include<cstdio>
 #include<cstring>
