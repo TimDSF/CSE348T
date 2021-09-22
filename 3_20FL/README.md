@@ -1,4 +1,4 @@
-# CSE348_AlgorithmNonAnalysis - FL 2020
+# CSE348 - FL 2020
 
 ## Schedule - Saturday 7PM - 9PM
 

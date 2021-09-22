@@ -1,4 +1,4 @@
-# CSE348_AlgorithmNonAnalysis - SP 2019
+# CSE348 - SP 2019
 
 ## Schedule - Saturday 12PM - 3PM
 

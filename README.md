@@ -1,11 +1,9 @@
-# CSE348_AlgorithmNonAnalysis
+# CSE348
 
 ## Introduction (trivial)
-This is the official git repository of **Computer Science and Engineering 348: Algorithm NonAnalysis course “funded” by Association for Computing Machinery of Washington University in St. Louis**, preparing for ___International Collegiate Programming Contest___, also known as ___CSE348:ANA_WUACM_ICPC___.  
+This is the official git repository of **Computer Science and Engineering 348**.
 
-However, this is also the best source for preparing for **Technical Interviews** because we will cover different _solution paradigms_, _data structures_, and _optimizations_ that helps you solve **Interview Problems** with less time and better performance.
-
-For practicing in your own time, we recommend https://codeforces.com for more ___competitive___ problems. https://open.kattis.com and https://leetcode.com are also good sources for a more balanced practice between ___competitiveness___ and ___interview___.  
+For practicing in your own time, we recommend https://open.kattis.com, as this is the ___official___ site used for ICPC series, or https://codeforces.com for more ___competitive___ problems. https://leetcode.com is also good sources for a more balanced practice between ___competitiveness___ and ___interview___.  
 
 ## Topics Covered in this Seminar (ideally)
 * Basics
@@ -13,12 +11,10 @@ For practicing in your own time, we recommend https://codeforces.com for more __
 * Data Structure 
 	* Standard Templates Library
 		* LinkedList
-		* Stack
-		* Queue
-		* PriorityQueue
-		* HashSet
-		* HashMap
-		* AVL Tree
+		* Stack / PriorityQueue
+		* Queue / Deque
+		* Set / Multiset / Map / Multimap
+		* HashSet / HashMap
 	* Optimization
 		* Prefix-Sum
 		* Disjoint-Set (Union Find) 
@@ -27,16 +23,16 @@ For practicing in your own time, we recommend https://codeforces.com for more __
 		* Tries
 * Solution Paradigms
 	* Brute Force
-	* Binary Search / Exponentiate
+	* Binary Search / Binary Lifting
 	* Recursion
-		* Memorization
+		* Memorized Search
 	* Greedy Algorithm
 	* Dynamic Programming
-		* Top-Down / Bottom-Up
+		* Standard
 		* Interval
 		* Circular
-	* Divide and Conquer
 	* Sliding Window
+	* Divide and Conquer
 * Graph Theory
 	* Tree
 		* Least Common Ancestor
@@ -51,8 +47,7 @@ For practicing in your own time, we recommend https://codeforces.com for more __
 		* Bellman-Ford Algorithm / SPFA
 		* Floyd-Warshall Algorithm
 	* Network Flow
-		* Max-Flow
-		* Min-Cut
+		* Max-Flow / Min-Cut
 * Mathematics
 	* Probability
 	* Combinatorics
@@ -63,5 +58,5 @@ For practicing in your own time, we recommend https://codeforces.com for more __
 	* Aho–Corasick Algorithm
 * Optimization (ad hoc)
 	* Bit-mask Optimization
-	* Precomputation
+	* Pre-computation
 
