@@ -2,8 +2,8 @@
 
 ## Topics
 Standard Template Library / Data Structure, with detailed cheatsheet in the repository.
-1. STL\_C++\_21.txt (@TimDSF)
-2. STL\_Java\_19.pdf (@devYaoYH)
+1. STL\_C++\_21.txt (<https://github.com/TimDSF>)
+2. STL\_Java\_19.pdf (<https://github.com/devYaoYH>)
 
 ## Sample Problems
 TBA
