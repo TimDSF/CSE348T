@@ -12,4 +12,4 @@
 7. Nov/13 - Dynamic Programming + Divide and Conquer
 8. Nov/20 - Fenwick Tree + Sparse Table + Segment Tree
 9. Nov/27 - _THANKSGIVING_ (Fun set 1)
-10. Dec/4 - Graph Theory + Union Find Search
+10. Dec/04 - Graph Theory + Union Find Search
