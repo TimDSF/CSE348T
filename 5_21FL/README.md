@@ -1,6 +1,7 @@
 # CSE348 - FL 2021
 
-## Saturday 3 PM - 5 PM @ ACM Lounge / Urbauer 114
+## Time: Saturday 3 PM - 5 PM
+## Location: ACM Lounge / Urbauer 114
 
 ## Schedule
 1. Sep/25 - Standard Template Library / Data Structure
