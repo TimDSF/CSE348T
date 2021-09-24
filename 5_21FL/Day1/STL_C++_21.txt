@@ -100,9 +100,14 @@ Unordered associative containers:
    l.insert_after(pos, first, last) //   O(m)
 
    l.erase_after(pos)               //   O(1)
-   l.erase_after(pos, last)         //   O(m)
+   l.erase_after(first, last)       //   O(m)
    l.clear()                        //   O(n)
 
+   // operations:
+   l.sort()                         //   O(n log n)
+   l.splice(pos, l, pos)            //   O(1)
+   l.splice(pos, l, first, last)    //   O(m)
+   
    // iterator
    l.before_begin()
    l.begin()
@@ -135,8 +140,13 @@ Unordered associative containers:
    l.insert(pos, first, last)       //   O(m)
 
    l.erase(pos)                     //   O(1)
-   l.erase(pos, last)               //   O(m)
+   l.erase(first, last)             //   O(m)
    l.clear()                        //   O(n)
+
+   // operations:
+   l.sort()                         //   O(n log n)
+   l.splice(pos, l, pos)            //   O(1)
+   l.splice(pos, l, first, last)    //   O(m)
 
    // iterator
    l.begin()

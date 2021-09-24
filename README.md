@@ -26,13 +26,14 @@ For practicing in your own time, we recommend https://open.kattis.com, as this i
 	* Binary Search / Binary Lifting
 	* Recursion
 		* Memorized Search
-	* Greedy Algorithm
 	* Dynamic Programming
 		* Standard
 		* Interval
 		* Circular
-	* Sliding Window
 	* Divide and Conquer
+	* Greedy Algorithm
+	* Sliding Window
+	* Monotonic Queue
 * Graph Theory
 	* Tree
 		* Least Common Ancestor
