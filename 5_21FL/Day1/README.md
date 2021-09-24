@@ -1,4 +1,7 @@
-# LeetCode / ICPC Session: Day 1 (***Saturday Sep/25 3 - 5 PM @ ACM Lounge / Urbauer 114***)
+# LeetCode / ICPC Session: Day 1
+
+## Time: Saturday 3 PM - 5 PM
+## Location: ACM Lounge / Urbauer 114
 
 ## Topics
 Standard Template Library / Data Structure, with detailed cheatsheet in the repository.
