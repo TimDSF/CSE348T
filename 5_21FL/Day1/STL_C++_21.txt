@@ -48,7 +48,7 @@ Unordered associative containers:
    v.pop_back()                    //   O(1)
    v.insert(pos, val)              // ~ O(n)
    v.insert(pos, m, val)           // ~ O(n+m)
-   v.insert(pos, first, last_t) // ~ O(n+m) / O(n + log m)
+   v.insert(pos, first, last) // ~ O(n+m) / O(n + log m)
    
    v.erase(pos)                  // ~ O(n)
    v.erase(first, last)       // ~ O(n+m)
@@ -214,7 +214,7 @@ Unordered associative containers:
 
    // modifiers
    s.insert(val)                    //   O(log n)
-   s.insert(front, last)            //   O(n)
+   s.insert(front, last)            //   O(m)
 
    s.erase(pos)                     //   O(1)
    s.erase(val)                     //   O(log n)
@@ -287,7 +287,7 @@ B. map
    // iterator
    map<Type, Type>::iterator it;
    for (it = m.begin(); it != m.end(); ++ it)
-      cout << it->first << it->second;
+      cout << it -> first << it -> second;
 ----------------------------------------
 C. multimap
    #include <map>

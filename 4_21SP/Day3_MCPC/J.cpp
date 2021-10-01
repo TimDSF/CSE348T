@@ -17,7 +17,7 @@ int main(){
 	memset(f,0xff,sizeof(f));
 	
 	f[0] = a[0];
-	f[a[0]] = 0;
+	f[a[0]] = 0; // the largest of the smallest unused value of achieving weight i if f[i]
 
 	for (i=1;i<n;++i){
 		for (j=c;j>=0;--j){
