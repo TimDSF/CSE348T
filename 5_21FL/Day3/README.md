@@ -16,3 +16,6 @@ https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/
 
 For a reference, here are the methods:
 
+| index | description | time complexity |
+| ----- | ----------- | --------------- |
+| 1 | naive recursion | `O(2^n)` |
