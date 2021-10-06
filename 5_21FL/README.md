@@ -6,7 +6,7 @@
 ## Schedule
 1. Sep/25 - Standard Template Library / Data Structure
 2. Oct/02 - Binary Search + Binary Lifting + Bitmask 
-3. Oct/09 - _FALL BREAK_ (fun set 1)
+3. Oct/09 - ___FALL BREAK___ (_once upon a time - Fibonacci_)
 4. Oct/23 - Recursion + Memorization
 5. Oct/30 - Depth First Search + Breadth First Search
 6. Nov/06 - Dynamic Programming + Greedy

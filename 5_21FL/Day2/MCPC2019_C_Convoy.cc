@@ -17,7 +17,7 @@ int main(){
 	sort(t,t+n); // sorting the time in asceding order
 	
 	//  using the 0 to k-1 drivers as they are the fastest
-	l = t[0]; // left bound: the fastest driver has to reach ones
+	l = t[0]; // left bound: the fastest driver has to reach once
 	r = 2 * t[k-1] * ((n+3)/4); // right bound: the slowest driver drives everyone
 
 	while ( l < r ){ // binary search

@@ -1,4 +1,4 @@
-# LeetCode / ICPC Session: Day 1 (***Saturday Sep/25 3 - 5 PM***)
+# LeetCode / ICPC Session: Day 2 (***Saturday Oct/2 3 - 5 PM***)
 
 ## Topics
 Binary search, binary lifting, bitmasks, and small talk about competitive programming.
