@@ -25,7 +25,7 @@ For a reference, here are the methods:
 | 5 | matrix product | `O(n)` | `O(n)` |
 | 6 | matrix exponentiation | `O(log n)` | `O(n)` |
 | 7 | recursion formula | `O(log n)` | `O(n)` |
-| 8 | close formula | `O(log n)` | `O(1)` |
+| 8 | close-form expression | `O(log n)` | `O(1)` |
 
 But, my all-time favorite is the non-recursive solution to the matrix exponentiation, which has:
 
