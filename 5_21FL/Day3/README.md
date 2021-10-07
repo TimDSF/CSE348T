@@ -26,3 +26,9 @@ For a reference, here are the methods:
 | 6 | matrix exponentiation | `O(log n)` | `O(n)` |
 | 7 | recursion formula | `O(log n)` | `O(n)` |
 | 8 | close formula | `O(log n)` | `O(1)` |
+
+But, my all-time favorite is the non-recursive solution to the matrix exponentiation, which has:
+
+| index | description | time complexity | space complexity |
+| ----- | ----------- | --------------- | ---------------- |
+| 6+ | matrix exponentiation | `O(log n)` | `O(1)` |
