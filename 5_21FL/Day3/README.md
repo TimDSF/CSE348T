@@ -16,6 +16,13 @@ https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/
 
 For a reference, here are the methods:
 
-| index | description | time complexity |
-| ----- | ----------- | --------------- |
-| 1 | naive recursion | `O(2^n)` |
+| index | description | time complexity | space complexity |
+| ----- | ----------- | --------------- | ---------------- |
+| 1 | naive recursion | `O(2^n)` | `O(n)` |
+| 2 | memorized recursion (DP) | `O(n)` | `O(n)` |
+| 3 | dynamic programming | `O(n)` | `O(n)` |
+| 4 | iterative method | `O(n)` | `O(1)` |
+| 5 | matrix product | `O(n)` | `O(n)` |
+| 6 | matrix exponentiation | `O(log n)` | `O(n)` |
+| 7 | recursion formula | `O(log n)` | `O(n)` |
+| 8 | close formula | `O(log n)` | `O(1)` |
