@@ -10,7 +10,7 @@ Fibonacci sequence is famous for multiple reasons. In case you are unfamiliar wi
 
 How many ways can you calculate the n<sup>th</sup> number of the Fibonacci sequence?
 
-Here, we have 8 methods to do so, with time complexity ranging of `O(2^n)` to `O(log n)`.
+Here, we have 8 methods to do so, with time complexity ranging of `O(2<sup>n</sup>)` to `O(log n)`.
 
 https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/  
 
