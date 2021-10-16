@@ -5,13 +5,12 @@ Binary search, binary lifting, bitmasks, and small talk about competitive progra
 
 ## Sample Problems
 
-1. LeetCode 704: (Easy) Binary Search  
-https://leetcode.com/problems/binary-search/
+1. Fibonacci Number  
 
-2. LeetCode 50: (Medium) Pow(x, n)  
-https://leetcode.com/problems/powx-n/
+2. LeetCode 394: (Medium) Decode String  
+https://leetcode.com/problems/decode-string/  
 
-3. MCPC 2019 - C: (5.6) Convoy  
-https://open.kattis.com/problems/convoy 
+3. LeetCode 25: (Hard) Reverse Nodes in k-Group  
+https://leetcode.com/problems/reverse-nodes-in-k-group/  
 
 ___sample solutions with detailed comments uploaded___
