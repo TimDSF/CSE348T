@@ -1,7 +1,7 @@
 # LeetCode / ICPC Session: Day 2 (***Saturday Oct/2 3 - 5 PM***)
 
 ## Topics
-Binary search, binary lifting, bitmasks, and small talk about competitive programming.
+Some basics about recursion, and some problems to practice.
 
 ## Sample Problems
 
