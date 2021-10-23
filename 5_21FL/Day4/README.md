@@ -1,4 +1,4 @@
-# LeetCode / ICPC Session: Day 2 (***Saturday Oct/2 3 - 5 PM***)
+# LeetCode / ICPC Session: Day 4 (***Saturday Oct/2 3 - 5 PM***)
 
 ## Topics
 Some basics about recursion, and some problems to practice.

@@ -48,11 +48,11 @@ Unordered associative containers:
    v.pop_back()                    //   O(1)
    v.insert(pos, val)              // ~ O(n)
    v.insert(pos, m, val)           // ~ O(n+m)
-   v.insert(pos, first, last) // ~ O(n+m) / O(n + log m)
+   v.insert(pos, first, last)      // ~ O(n+m) / O(n + log m)
    
-   v.erase(pos)                  // ~ O(n)
-   v.erase(first, last)       // ~ O(n+m)
-   v.clear()                        //   O(n)
+   v.erase(pos)                    // ~ O(n)
+   v.erase(first, last)            // ~ O(n+m)
+   v.clear()                       //   O(n)
 ----------------------------------------
 3. deque
    #include <deque>
