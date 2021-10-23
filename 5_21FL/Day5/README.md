@@ -8,7 +8,7 @@ Some basics about depth-first search and breadth-first search.
 1. LeetCode 94: (Easy) Binary Tree Inorder Traversal  
 https://leetcode.com/problems/binary-tree-inorder-traversal/  
 
-2. LeetCode 394: (Medium) Decode String  
+2. LeetCode 394: (Medium) Perfect Squares  
 https://leetcode.com/problems/perfect-squares/  
 
 ___sample solutions uploaded___
