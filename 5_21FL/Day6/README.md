@@ -1,7 +1,7 @@
 # LeetCode / ICPC Session: Day 6 (***Saturday Oct/30 3 - 5 PM***)
 
 ## Topics
-Some basics about dynamic programming and greedy.
+Some basics about dynamic programming and optimizing brutal force solutions.
 
 ## Sample Problems
 
