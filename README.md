@@ -9,7 +9,6 @@ For practicing in your own time, we recommend https://open.kattis.com, as this i
 * References
 	* https://cp-algorithms.com
 	* https://oi-wiki.org (中文)
-## Topics Covered in this Seminar (ideally)
 * Basics
 	* Simulation / Implementation
 * Data Structure 
