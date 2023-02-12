@@ -6,6 +6,10 @@ This is the official git repository of **Computer Science and Engineering 348**.
 For practicing in your own time, we recommend https://open.kattis.com, as this is the ___official___ site used for ICPC series, or https://codeforces.com for more ___competitive___ problems. https://leetcode.com is also good sources for a more balanced practice between ___competitiveness___ and ___interview___.  
 
 ## Topics Covered in this Seminar (ideally)
+* References
+	* https://cp-algorithms.com
+	* https://oi-wiki.org (中文)
+## Topics Covered in this Seminar (ideally)
 * Basics
 	* Simulation / Implementation
 * Data Structure 
