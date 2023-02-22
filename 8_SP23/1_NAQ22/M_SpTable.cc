@@ -31,7 +31,6 @@ vector<vector<pair<int,int>>> hpaths;
 vector<pair<int,int>> htop;
 vector<int> pid;
 vector<int> pidx;
-vector<vector<pair<int,int>>> ledges;
 
 // Lowest-Common Ancestor
 int lg, t;
@@ -121,8 +120,6 @@ void decomp(int u, int w0, int h) {
 			htop[v] = {hpaths[pid[u]][0].first, max(w, htop[u].second)};
 			decomp(v, w, u);
 		} else {
-			ledges.push_back(vector<pair<int,int>>());
-			ledges[pid[u]].push_back({hpaths.size(), w});
 			htop[v] = {u, w};
 			decomp(v, 0, v);
 		}
@@ -131,19 +128,22 @@ void decomp(int u, int w0, int h) {
 
 int get_max_toll(int u, int v) {
 	int p = lca(u, v), i = pid[p], ans = 0;
-	// printf("lca(%d,%d): %d\n", u, v, p);
+
 	while (pid[u] != i) {
 		ans = max(htop[u].second, ans);
+		if (u == htop[u].first) break;
 		u = htop[u].first;
 	}
 	while (pid[v] != i) {
 		ans = max(htop[v].second, ans);
+		if (v == htop[v].first) break;
 		v = htop[v].first;
-		if (v == 0) break;  // REMOVE!!!
 	}
-	int l = min(pidx[p], pidx[u]) + 1, r = max(pidx[p], pidx[u]) + 1, lg = lg2[r - l + 1];
-	ans = max(max(st[i][lg][l], st[i][lg][r - (1 << lg) + 1]), ans);
-	l = min(pidx[p], pidx[v]) + 1, r = max(pidx[p], pidx[v]) + 1;
+
+	int l = min(pidx[u], pidx[v]) + 1, 
+		r = max(pidx[u], pidx[v]), 
+		lg = lg2[r - l + 1];
+	if (r < l) return ans;
 	ans = max(max(st[i][lg][l], st[i][lg][r - (1 << lg) + 1]), ans);
 	return ans;
 }
@@ -152,7 +152,7 @@ int get_max_toll(int u, int v) {
 void build(vector<pair<int,int>>& arr, vector<vector<int>>& st) {
 	int n = arr.size();
 	for (int i = 0; i < n; ++ i) {
-		st[0][i] = arr[i].first;
+		st[0][i] = arr[i].second;
 	}
 	for (int j = 1; j <= lg; ++ j) {
 		for (int i = 0; i + (1 << j) - 1 < n; ++ i) {
@@ -176,14 +176,13 @@ int main() {
 	lg2.resize(n + 1);
 	lg2[1] = 0; lg2[2] = 1;
 	for (int i = 3; i <= n; ++ i) {
-		lg2[i] = lg2[i / 2] * 2;
+		lg2[i] = lg2[i / 2] + 1;
 	}
 	parent.resize(n);
 	hchild.resize(n);
 	htop.resize(n);
 	pid.resize(n);
 	pidx.resize(n);
-	ledges.assign(1, vector<pair<int,int>>());
 	lg = ceil(log2(n));
 	t1.resize(n); 
 	t2.resize(n);
@@ -210,7 +209,7 @@ int main() {
 		// printf("%d-%d : %d\n", u, v, w);
 
 		if (get_fa(u) != get_fa(v)) {
-			fa[v] = fa[u];
+			fa[get_fa(v)] = fa[get_fa(u)];
 			te[u].push_back({v, w});
 			te[v].push_back({u, w}); 
 			++found;
@@ -236,24 +235,22 @@ int main() {
 	// for (int i = 0; i < n; ++ i) {
 	// 	printf("%d\t%d\t%d\t%d\t%d\n", i, pid[i], pidx[i], htop[i].first, htop[i].second);
 	// }
-	
-	// printf("\nLight Edges:\n");
-	// for (int i = 0; i < ledges.size(); ++ i) {
-	// 	printf("%d: ", i);
-	// 	for (int j = 0; j < ledges[i].size(); ++ j) {
-	// 		printf("%d(%d) ", ledges[i][j].first, ledges[i][j].second);
-	// 	}
-	// 	printf("\n");
-	// }
 	// printf("\n");
 
 	// Sparse Table
 	st.assign(hpaths.size(), vector<vector<int>>());
 	for (int i = 0; i < hpaths.size(); ++i) {
 		st[i].assign(lg2[hpaths[i].size()] + 1, vector<int>(hpaths[i].size()));
-		// build(hpaths[i], st[i]);
-		// printf("%d: %d %d\n", i, max(segs[i], 0, hpaths[i].size() + 1, 0, hpaths[i].size(), 1), max(segs[i], 0, hpaths[i].size() / 2 + 1, 0, hpaths[i].size(), 1));
+		build(hpaths[i], st[i]);
+		// for (int j = 0; j < st[i].size(); ++ j) {
+		// 	for (int k = 0; k < st[i][j].size(); ++ k) {
+		// 		printf("%d ", st[i][j][k]);
+		// 	}
+		// 	printf("\n");
+		// }
+		// printf("\n");
 	}
+	// printf("\n");
 
 	// Delayed Calculation
 	for (int i = 0; i < q; ++i) {
@@ -281,7 +278,6 @@ int main() {
 	int j = 0;
 	for (int i = 0, found = 0; i < edges.size() && found < n - 1;) {
 		int toll = toll_2_id[j].first;
-		// printf("toll: %d\n", toll);
 
 		for (; i < edges.size() && edges[i].first <= toll && found < n - 1; ++ i) {
 			int w = edges[i].first;
@@ -289,10 +285,8 @@ int main() {
 			int v = edges[i].second.second;
 
 			if (get_fa(u) != get_fa(v)) {
-				// printf(" + %d-%d : %d\n", u, v, w);
 				sz[get_fa(u)] += sz[get_fa(v)];
-				fa[v] = fa[u];
-				// printf("   |%d|=%d  |%d|=%d\n\n", get_fa(u), sz[get_fa(u)], get_fa(v), sz[get_fa(v)]);
+				fa[get_fa(v)] = fa[get_fa(u)];
 				te[u].push_back({v, w});
 				te[v].push_back({u, w}); 
 				++found;
@@ -302,21 +296,17 @@ int main() {
 		for (; j < q && toll_2_id[j].first <= toll; ++ j) {
 			int i = toll_2_id[j].second, u = us[i];
 			ans[i].second = sz[get_fa(u)];
-			// printf("   %d -> %d\n", u, ans[i].second);
 		}
 	}
 
 	for (; j < q; ++ j) {
 		int i = toll_2_id[j].second, u = us[i];
 		ans[i].second = sz[get_fa(u)];
-		// printf("   %d -> %d\n", u, ans[i].second);
 	}
 
 	for (int i = 0; i < q; ++ i) {
 		printf("%d %d\n", ans[i].first, ans[i].second);
 	}
-	printf("\n");
-
 
 	return 0;
 }

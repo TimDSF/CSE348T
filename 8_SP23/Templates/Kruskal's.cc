@@ -39,7 +39,7 @@ int main() {
 		edges.pop();
 
 		if (get_fa(u) != get_fa(v)) {
-			fa[v] = fa[u];
+			fa[get_fa(v)] = fa[get_fa(u)];
 			te[u].push_back({v, w});
 			te[v].push_back({u, w});
 			printf("  yes\n");
