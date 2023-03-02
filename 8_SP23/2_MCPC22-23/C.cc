@@ -1,3 +1,4 @@
+// Credit: Tim Dong
 #include <cstring>
 #include <cstdio>
 #include <algorithm>
@@ -30,14 +31,12 @@ int main() {
             dp[i % 2][l1] = max(dp[1 - i % 2][l1] + 1, dp[1 - i % 2][k] + 1);
             ans = max(dp[i % 2][l1], ans);
             ans = max(dp[i % 2][l2], ans);
-            // printf("    %d   %d %d\n", k, dp[l1], dp[k]);
         }
         for (int k = 1; k < 64; ++ k) {
             dp[i % 2][k] = max(dp[1 - i % 2][k], dp[i % 2][k]);
         }
-        // printf("%d\n", ans);
     }
-    // printf("\n");
+
     printf("%d\n", ans);
     return 0;
 }

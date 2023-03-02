@@ -1,3 +1,4 @@
+# Credit: Yunfan Wang
 s = int(input())
 pts = set()
 while len(pts) < 4:

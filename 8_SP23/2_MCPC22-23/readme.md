@@ -10,8 +10,8 @@ We have not found the official solution to this competition.
 ### Category
 Simulation
 ### Difficulty
-Easy ($1.3$)
-### Solution: $O(1)$
+Easy ($1.3$)[^1]
+### Solution: $O(1)$[^2]
 Simply check the number of rotations it does, and judge based on the decimal values (___down___ if 0.25 to 0.75, ___up___ otherwise).
 
 ## B - Triangle Containment
@@ -111,3 +111,7 @@ Prefix Sum
 Median ($6.3$)
 ### Solution: $O(k^2 + n)$
 Calculate the prefix sum. Calculate the number of positive elements for each possible interval length with each possible starting location. Maintain the maximum and minimum. The provided solution have unnecessary calculations and is $O(kn)$.
+
+
+[^1] The difficulty is dynamic on open.kattis.com. Numbers are taken at March 02, 2023.
+[^2] Credit: Tim Dong, Yuheng Ding, Yunfan Wang.

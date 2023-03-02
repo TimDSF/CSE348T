@@ -1,3 +1,4 @@
+// Credit: Tim Dong
 #include <cstdio>
 #include <vector>
 #include <unordered_set>
@@ -11,7 +12,6 @@ unordered_set<int> chain, dropped;
 bool finished = false;
 
 void dfs(int u) {
-    // printf("+%d\n", u);
     chain.insert(u);
 
     if (finished) return;
@@ -22,15 +22,12 @@ void dfs(int u) {
             finished = true;
             return;
         }
-        // printf("++\n");
     }
     if (dropped.find(a[cur]) != dropped.end()) {
         finished = true;
-        // printf("finished\n");
         return;
     }
     for (int v : e[u]) {
-        // printf(" => %d\n", v);
         dfs(v);
     }
     while (chain.find(a[cur]) != chain.end()) {
@@ -40,12 +37,10 @@ void dfs(int u) {
             finished = true;
             return;
         }
-        // printf("++\n");
     }
 
     chain.erase(u);
     dropped.insert(u);
-    // printf("-%d\n", u);
 }
 
 int main() {

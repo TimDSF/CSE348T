@@ -1,3 +1,4 @@
+# Credit: Yunfan Wang
 s = input()
 n = len(s)
 ans = []

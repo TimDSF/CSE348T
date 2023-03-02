@@ -1,3 +1,4 @@
+// Credit: Tim Dong
 #include <cstdio>
 using namespace std;
 int n, k;
