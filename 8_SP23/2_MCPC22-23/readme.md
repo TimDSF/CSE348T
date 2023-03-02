@@ -8,7 +8,7 @@ We have not found the official solution to this competition.
 
 ## A - Blueberry Waffle
 ### Category
-Check-in
+Simulation
 ### Difficulty
 Easy
 ### Solution
@@ -28,7 +28,31 @@ DP, Bitmask, Dimension Reduction
 ### Difficulty
 Median
 ### Solution
-This is a DP problem, where the state denotes the current status of the tools. Let $dp[i][c_1c_2c_3a_1a_2a_3]$ be the states, where $i$ is the current tool we are considering, and $c_1c_2c_3a_1a_2a_3$ is the status. $c_1c_2c_3a_1a_2a_3$ are the binary representation of the current availability of the tools, where $c_1c_2c_3$ indicates which tool is currently using, and $a_1a_2a_3$ indicates which tool is still yet to be used. So, for each task, you can choose to finish it or not. If you choose to finish it, then, you could come from two states: where the tool required is currently in use and where it is not currently used. And for simplicity, we will also update two states in the $DP$ array: where I keep the used tool available, and where I dropped the current tool.
+This is a DP problem, where the state denotes the current status of the tools. Let $dp[i][\overline{c_1c_2c_3a_1a_2a_3}]$ be the states, where $i$ is the current tool we are considering, and $\overline{c_1c_2c_3a_1a_2a_3}$ is the status. $\overline{c_1c_2c_3a_1a_2a_3}$ are the binary representation of the current availability of the tools, where $\overline{c_1c_2c_3}$ indicates which tool is currently using, and $\overline{a_1a_2a_3}$ indicates which tool is still yet to be used. So, for each task, you can choose to finish it or not. If you choose to finish it, then, you could come from two states: where the tool required is currently in use and where it is not currently used. And for simplicity, we will also update two states in the $DP$ array: where I keep the used tool available, and where I dropped the current tool.
+
+## D - Champernowne Count
+### Category
+Modulo Arithmetic
+### Difficulty
+Easy
+### Solution
+Appending the next number to the cumulative number, while taking modulo along the way.
+
+## E - Color Tubes
+### Category
+Simulation
+### Difficulty
+Median
+### Solution
+Tower of Hanoi with $n+1$ pillars but $3$ maximum height. So, keep the color in the base for each pillar, and find the other two balls with the same color, switch with the two on top of that pillar. Lots of details.
+
+## F - Food Processor
+### Category
+Simulation
+### Difficulty
+Median
+### Solution
+Sort the knifes by size descending order. Keep using the current best knife with shortest time, until we have unlocked the next knife. The time is calculated as a exponential decay, using logarithm.
 
 ## X - XXX
 ### Category
