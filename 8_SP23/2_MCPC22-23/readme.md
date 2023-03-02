@@ -24,7 +24,7 @@ Let $O$ be the origin, $X$ be $(x, 0)$. A point $B$ if contained in the triangle
 
 ## C - Everything Is A Nail
 ### Category
-DP, Bitmask, Dimension Reduction
+Dynamic Programming, Bitmask DP, Dimension Reduction DP
 ### Difficulty
 Median
 ### Solution
@@ -54,27 +54,61 @@ Median
 ### Solution
 Sort the knifes by size descending order. Keep using the current best knife with shortest time, until we have unlocked the next knife. The time is calculated as a exponential decay, using logarithm.
 
-## X - XXX
+## G - XXX
 ### Category
+Inclusion–exclusion principle (Poincaré's Theorem)
 ### Difficulty
+Very Hard
 ### Solution
+IDK yet.
 
-## X - XXX
+## H - Hunt the Wumpus
 ### Category
+Simulation
 ### Difficulty
+Easy
 ### Solution
+Simulate the game. Output correspondingly.
 
-## X - XXX
+## I - Branch Manager
 ### Category
+Depth-First Search, Independent Pointer Technique
 ### Difficulty
+Median
 ### Solution
+Build the tree, and then, traverse on tree using Depth-First Search. During the traversal, keep trace of elements on the chain from the root to the current node, as well as all the nodes that has been dropped. Have an independent pointer that exams the destinations in the provided order. If the node is in the dropped set, then, it cannot be reached and we should terminate; if it is on the current chain, then, it can be reached, and we keep examining the next element; if it is not yet visited, then, proceed the DFS. 
 
-## X - XXX
+## J - Advertising ICPC
 ### Category
+Bitmask, Inclusion–exclusion principle (Poincaré's Theorem)
 ### Difficulty
-### Solution
+Hard
+### Solution 1 (DFS)
+Using DFS, we can examine the location where $2\times2$ ICPC block can be placed. While doing the DFS, we also keep track of the number of ICPC blocks we have placed. After finish the DFS, if the number of flags is odd, the solution should be added to the accumulator, and if the number of flags is even, it should be taken off. This is because of double counting while we place all possible characters on the non-occupied positions. So, we need to use the Poincaré's Theorem to count the union.
+### Solution 2 (BFS)
+To be finished.
 
-## X - XXX
+## K - Bog of Eternal Stench
 ### Category
+Shortest Path
 ### Difficulty
+Very hard
 ### Solution
+IDK yet.
+
+## L - I Could Have Won
+### Category
+Simulation
+### Difficulty
+Easy
+### Solution
+Try every possible $k$, simulate the game.
+
+## M - Creative Accounting
+### Category
+Prefix Sum
+### Difficulty
+Median
+### Solution
+Calculate the prefix sum. Calculate the number of positive elements for each possible interval length with each possible starting location. Maintain the maximum and minimum.
+
