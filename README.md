@@ -43,7 +43,11 @@ This is the surreal competition that everyone wants to get in, but few could hav
 For practicing in your own time, we recommend [Kattis](https://open.kattis.com), as this is the ___official___ site used for NAQ, MCPC, and NAC series. [Codeforces](https://codeforces.com) for more ___competitive___ problems. [LeetCode](https://leetcode.com) is also good sources for a more balanced practice between ___competitiveness___ and ___interview___.  
 
 ## Human Resources
-**Tim Dong:** Organizer of WashU ICPC from 2019-2023, owner of this repo. Contact me at [here](mailto:timdong@wustl.edu) if you have any questions about prior experiences.  
+**Tim Dong:** Organizer of WashU ICPC/LeetCode practice from 2019-2023, owner of this repo. Contact me at [here](mailto:timdong@wustl.edu) if you have any questions about prior experiences.  
+
+**Yiheng Yao:** Former President of ACM, contributor of this repo.
+
+**Yuheng Ding:** North America Championship contestant, contributor of this repo.
 
 **Prof. Cosgrove:** The Professor contact of this event. He is the veteran in WU ICPC.  
 
