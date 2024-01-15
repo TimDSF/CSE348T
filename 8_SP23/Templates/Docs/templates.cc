@@ -20,6 +20,34 @@
 
 【树论】
 树的直径
+树的重心
+最近公共祖先
+树链剖分
+
+【图论】
+拓扑排序 (Kahn)
+有向无环图最短路径
+最小生成树 (Kruskal)
+多源最短路径 (Floyd)
+单源最短路径 (Dijkstra, 没有负边)
+单源最短路径 (SPFA, 没有负环)
+最小环
+强连通分量
+2-SAT
+网络流 (Ford-Fulkerson)
+网络流 (Dinic, O(E min{E^1/2, V^2/3}))
+
+【数据结构】
+线段树
+ST表
+
+【计算几何】
+凸包
+
+=================================================
+
+【树论】
+树的直径
 const int N = 10000 + 10;
 int n, c, d[N];
 vector<int> E[N];
@@ -582,6 +610,198 @@ struct MF {
   }
 } mf;
 
-[字符串]
+【字符串】
 字符串哈希
 	primes: 1000000007 and 1000000009
+
+
+【数据结构】
+线段树
+int n, m;
+vector<int> seg, tag; 
+
+void build(const vector<int>& arr, vector<int>& seg, vector<int>& tag, int L, int R, int i){
+	if (L + 1 >= R){
+		seg[i] = arr[L];
+		return;
+	}
+	int M = (L + R) / 2;
+	build(arr, seg, tag, L, M, i * 2);
+	build(arr, seg, tag, M, R, i * 2 + 1);
+	seg[i] = seg[i * 2] + seg[i * 2 + 1];
+}
+
+int sum(vector<int>& seg, vector<int>& tag, int l, int r, int L, int R, int i){
+	if (l <= L && R <= r) return seg[i];
+	int M = (L + R) / 2, ans = 0;
+	if (tag[i]){
+		seg[i * 2] += tag[i] * (M - L); tag[i * 2] += tag[i];
+		seg[i * 2 + 1] += tag[i] * (R - M); tag[i * 2 + 1] += tag[i];
+		tag[i] = 0;
+	}
+	if (L < r && l < M) ans += sum(seg, tag, l, r, L, M, i * 2);
+	if (M < r && l < R) ans += sum(seg, tag, l, r, M, R, i * 2 + 1);
+	return ans;
+}
+
+// calculate: seg of [fm,to)
+// current node: s[i] of seg [l,r)
+void update(vector<int>& seg, vector<int>& tag, int l, int r, int dl, int L, int R, int i){
+	if (l <= L && R <= r){
+		seg[i] += dl * (R - L); tag[i] += dl;
+		return;
+	}
+	int M = (L + R) / 2;
+	if (tag[i]){
+		seg[i * 2] += tag[i] * (M - L); tag[i * 2] += tag[i];
+		seg[i * 2 + 1] += tag[i] * (R - M); tag[i * 2 + 1] += tag[i];
+		tag[i] = 0;
+	}
+	if (L < r && l < M) update(seg, tag, l, r, dl, L, M, i * 2);
+	if (M < r && l < R) update(seg, tag, l, r, dl, M, R, i * 2 + 1);
+	seg[i] = seg[i * 2] + seg[i * 2 + 1];
+}
+
+ST表
+int n, m, lg;
+vector<int> a;
+vector<vector<int>> st;
+vector<int> log2n;
+
+int main() {
+	scanf("%d", &n);
+	a.resize(n);
+	log2n.resize(n + 1);
+	log2n[1] = 0; log2n[2] = 1;
+	for (int i = 3; i <= n; ++ i) {
+		log2n[i] = log2n[i / 2] + 1;
+	}
+
+	lg = ceil(log2(n));
+	st.assign(n, vector<int>(lg + 1));
+
+	for (int i = 0; i < n; ++ i) {
+		scanf("%d", &a[i]);
+		st[i][0] = a[i];
+	}
+	for (int j = 1; j <= lg; ++ j) {
+		for (int i = 0; i + (1 << j) - 1 < n; ++ i) {
+			st[i][j] = max(st[i][j - 1], st[i + (1 << (j - 1))][j - 1]);
+		}
+	}
+
+	scanf("%d", &m);
+	for (int i = 0; i < m; ++ i) {
+		int l, r;
+		scanf("%d%d", &l, &r);
+		int lg = log2n[r - l + 1];
+		int mx = max(st[l][lg], st[r - (1 << lg) + 1][lg]);
+		printf("%d\n", mx);
+	}
+}
+
+【计算几何】
+凸包
+struct Point {
+	int x, y;
+	Point() : x(0), y(0) {};
+	Point(int xx, int yy) : x(xx), y(yy) {};
+};
+
+Point c0[N], c1[N];
+
+double dist(Point p1, Point p2) {
+	return sqrt(pow(p1.x - p2.x, 2) + pow(p1.y - p2.y, 2));
+}
+
+int ccw(Point p1, Point p2, Point p3) {
+	int xx0 = p2.x - p1.x, yy0 = p2.y - p1.y;
+	int xx1 = p3.x - p2.x, yy1 = p3.y - p2.y;
+	return xx0 * yy1 - xx1 * yy0 > 0;
+}
+
+int cw(Point p1, Point p2, Point p3) {
+	int xx0 = p2.x - p1.x, yy0 = p2.y - p1.y;
+	int xx1 = p3.x - p2.x, yy1 = p3.y - p2.y;
+	return xx0 * yy1 - xx1 * yy0 < 0;
+}
+
+bool cmp(Point p1, Point p2) {
+	return p1.x < p2.x;
+}
+
+int main(){
+	int n, m0, m1;
+	Point p0 = Point(1005, 0), p1 = Point(-1005, 0);
+
+	vector<Point> ps;
+	unordered_set<int> pos;
+
+	scanf("%d", &n);
+	for (int i = 0; i < n; ++ i) {
+		int x, y;
+		scanf("%d%d", &x, &y);
+		pos.insert((x + 1000) * 10000 + (y + 1000));
+
+	}
+	for (int p : pos) {
+		int x = p / 10000 - 1000;
+		int y = p % 10000 - 1000;
+		ps.push_back(Point(x,y));
+		if (x < p0.x) {
+			p0.x = x; p0.y = y;
+		}
+		if (x > p1.x) {
+			p1.x = x; p1.y = y;
+		}
+	}
+
+	sort(ps.begin(), ps.end(), cmp);
+	c0[0] = p0; m0 = 1; 
+	c1[0] = p0; m1 = 1;
+
+	for (int i = 1; i < ps.size(); ++ i) {
+		while (m0 >= 2 && !ccw(c0[m0 - 2], c0[m0 - 1], ps[i])) {
+			-- m0;
+		}
+		c0[m0] = ps[i]; ++ m0;
+
+		while (m1 >= 2 && !cw(c1[m1 - 2], c1[m1 - 1], ps[i])) {
+			-- m1;
+		}
+		c1[m1] = ps[i]; ++ m1;
+	}
+
+	for (int i = m1 - 2; i > 0; -- i) {
+		c0[m0 ++] = c1[i];
+	}
+
+	double ans = 0;
+	for (int i = 0; i < m0; ++ i) {  // delta: i
+		int l = 1, r = m0 - 1;
+		double d = 0;
+		while (l <= r) {
+			int m1 = (l + r) / 2;
+			double d1 = dist(c0[i], c0[(m1 + i) % m0]);
+			d = max(d, d1);
+			if (m1 == l) {
+				++ l;
+			} else if (m1 == r) {
+				-- r;
+			} else {
+				int m2 = m1 + 1;
+				double d2 = dist(c0[i], c0[(m2 + i) % m0]);
+				if (d1 < d2) {
+					l = m1 + 1;
+				} else {
+					r = m1 - 1;
+				}
+			}
+		}
+		ans = max(ans, d);
+	}
+
+	printf("%lf\n", ans);
+
+	return 0;
+}
