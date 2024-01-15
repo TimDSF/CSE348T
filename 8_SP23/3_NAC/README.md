@@ -2,9 +2,9 @@
 
 ## Participant
 
-**Team:**  Chtholly Nota Seniorious - Washington University in St. Louis
-**Contestents:** Tim Dong, Yuheng Ding, Yunwan Wang
-**Coach:** Luxiao Zheng
+**Team:**  Chtholly Nota Seniorious - Washington University in St. Louis  
+**Contestents:** Tim Dong, Yuheng Ding, Yunwan Wang  
+**Coach:** Luxiao Zheng  
 
 ## Official Website
 Link: [ICPC](https://nac.icpc.global/home-2022-23/)
