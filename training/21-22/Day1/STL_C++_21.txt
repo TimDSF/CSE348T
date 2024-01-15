@@ -1,0 +1,408 @@
+Standard Template Libraries (STL) in C++ 
+
+The best source to learn Containers in C++ STL is here: https://www.cplusplus.com/reference/stl/.
+
+----------------------------------------
+Special Mentions:
+   0. pair
+Sequence containers:
+   1. array
+   2. vector
+   3. deque
+   4. forward_list
+   5. list
+Container adaptors:
+   6. stack
+   7. queue
+   8. priority_queue
+Associative containers:
+   9. set
+   A. multiset
+   B. map
+   C. multimap
+Unordered associative containers:
+   D. unordered_set 
+   E. unordered_multiset 
+   F. unordered_map 
+   G. unordered_multimap
+----------------------------------------
+0. pair
+   #include <utility>
+   pair<Type1, Type2> p = make_pair(a, b);
+----------------------------------------
+1. array
+----------------------------------------
+2. vector
+   #include <vector>
+   vector<Type> v
+
+   // capacity
+   v.size()                        //   O(1)
+   v.empty()                       //   O(1)
+
+   // access
+   v[i]                            //   O(1)
+
+   // modifier
+   v.push_back(val)                //   O(1)
+   v.pop_back()                    //   O(1)
+   v.insert(pos, val)              // ~ O(n)
+   v.insert(pos, m, val)           // ~ O(n+m)
+   v.insert(pos, first, last)      // ~ O(n+m) / O(n + log m)
+   
+   v.erase(pos)                    // ~ O(n)
+   v.erase(first, last)            // ~ O(n+m)
+   v.clear()                       //   O(n)
+----------------------------------------
+3. deque
+   #include <deque>
+   deque<Type> d
+
+   // capacity
+   v.size()                         //   O(1)
+   v.empty()                        //   O(1)
+
+   // access
+   v[i]                             //   O(1)
+   v.front()                        //   O(1)
+   v.back()                         //   O(1)
+
+   // modifier
+   v.push_front(val)                //   O(1)
+   v.pop_front()                    //   O(1)
+   v.push_back(val)                 //   O(1)
+   v.pop_back()                     //   O(1)
+
+   v.insert(pos, val)               // ~ O(n)
+   v.insert(pos, m, val)            // ~ O(n+m)
+   v.insert(pos, first, last)       // ~ O(n+m)
+
+   v.erase(pos)                     // ~ O(n)
+   v.erase(first, last)             // ~ O(n+m)
+   v.clear()                        //   O(n)
+----------------------------------------
+4. forward_list
+   #include <forward_list>
+   forward_list<Type> l
+
+   // capacity
+   l.empty()                        //   O(1)
+
+   // access
+   l.front()                        //   O(1)
+
+   // modifier
+   l.push_front(val)                //   O(1)
+   l.pop_front()                    //   O(1)
+
+   l.insert_after(pos, val)         //   O(1)
+   l.insert_after(pos, m, val)      //   O(m)
+   l.insert_after(pos, first, last) //   O(m)
+
+   l.erase_after(pos)               //   O(1)
+   l.erase_after(first, last)       //   O(m)
+   l.clear()                        //   O(n)
+
+   // operations:
+   l.sort()                         //   O(n log n)
+   l.splice(pos, l, pos)            //   O(1)
+   l.splice(pos, l, first, last)    //   O(m)
+   
+   // iterator
+   l.before_begin()
+   l.begin()
+   l.end()
+
+   forward_list<Type>::iterator it;
+   for (it = l.begin(); it != l.end(); ++ it)
+      cout << *it;
+----------------------------------------
+5. list
+   #include <list>
+   list<Type> l
+
+   // capacity
+   l.empty()                        //   O(1)
+   l.size()                         //   O(1)
+
+   // access
+   l.front()                        //   O(1)
+   l.back()                         //   O(1)
+
+   // modifier
+   l.push_front(val)                //   O(1)
+   l.pop_front()                    //   O(1)
+   l.push_back(val)                 //   O(1)
+   l.pop_back()                     //   O(1)
+
+   l.insert(pos, val)               //   O(1)
+   l.insert(pos, m, val)            //   O(m)
+   l.insert(pos, first, last)       //   O(m)
+
+   l.erase(pos)                     //   O(1)
+   l.erase(first, last)             //   O(m)
+   l.clear()                        //   O(n)
+
+   // operations:
+   l.sort()                         //   O(n log n)
+   l.splice(pos, l, pos)            //   O(1)
+   l.splice(pos, l, first, last)    //   O(m)
+
+   // iterator
+   l.begin()
+   l.end()
+   l.rbegin()
+   l.rend()
+
+   list<Type>::iterator it;
+   for (it = l.begin(); it != l.end(); ++ it)
+      cout << *it;
+
+   list<Type>::reverse_iterator rit;
+   for (rit = l.rbegin(); rit != l.rend(); ++ rit)
+    cout << *rit;
+----------------------------------------
+6. stack
+   #include <stack>
+   stack<Type> s
+
+   // capacity
+   s.empty()                        //   O(1)
+   s.size()                         //   O(1)
+
+   // access & modifier
+   s.top()                          //   O(1)
+   s.push(val)                      //   O(1)
+   s.pop()                          //   O(1)
+----------------------------------------
+7. queue
+   #include <queue>
+   queue<Type> s
+
+   // capacity
+   s.empty()                        //   O(1)
+   s.size()                         //   O(1)
+
+   // access & modifier
+   s.front()                        //   O(1)
+   s.back()                         //   O(1)
+   s.push(val)                      //   O(1)
+   s.pop()                          //   O(1)
+----------------------------------------
+8. priority_queue
+   #include <queue>
+   priority_queue<Type> s           // greater at front
+   priority_queue<Type, vector<Type>, greater<Type>> s
+                                    // greater at front
+
+   // capacity
+   s.empty()                        //   O(1)
+   s.size()                         //   O(1)
+
+   // access & modifier
+   s.top()                          //   O(1)
+   s.push(val)                      //   O(log n)
+   s.pop()                          //   O(log n)
+----------------------------------------
+9. set
+   #include <set>
+   set<Type> s
+
+   // capacity
+   s.empty()                        //   O(1)
+   s.size()                         //   O(1)
+
+   // modifiers
+   s.insert(val)                    //   O(log n)
+   s.insert(front, last)            //   O(m)
+
+   s.erase(pos)                     //   O(1)
+   s.erase(val)                     //   O(log n)
+   s.erase(front, last)             //   O(m log (n+m))
+   s.clear()                        //   O(n)
+
+   // operations
+   s.find(val)                      //   O(log n)
+   s.count(val)                     //   O(log n)
+   s.lower_bound(val)               //   O(log n)
+   s.upper_bound(val)               //   O(log n)
+   s.equal_range(val)               //   O(log n)
+
+   // iterator
+   set<Type>::iterator it;
+   for (it = s.begin(); it != s.end(); ++ it)
+      cout << *it;
+----------------------------------------
+A. multiset
+   #include <set>
+   multiset<Type> s
+
+   // capacity
+   s.empty()                        //   O(1)
+   s.size()                         //   O(1)
+
+   // modifiers
+   s.insert(val)                    //   O(log n)
+   s.insert(front, last)            //   O(m log (n+m))
+
+   s.erase(pos)                     //   O(1)
+   s.erase(val)                     //   O(log n)
+   s.erase(front, last)             //   O(m)
+   s.clear()                        //   O(n)
+
+   // operations
+   s.find(val)                      //   O(log n)
+   s.count(val)                     //   O(log n + m)
+   s.lower_bound(val)               //   O(log n)
+   s.upper_bound(val)               //   O(log n)
+   s.equal_range(val)               //   O(log n)
+----------------------------------------
+B. map
+   #include <map>
+   map<Type1, Type2> m
+
+   // capacity
+   m.empty()                        //   O(1)
+   m.size()                         //   O(1)
+
+   // access
+   m[key]                           //   log(n)
+
+   // modifiers
+   m.insert(val)                    //   O(log n)
+   m.insert(front, last)            //   O(m log (n+m))
+
+   m.erase(pos)                     //   O(1)
+   m.erase(val)                     //   O(log n)
+   m.erase(front, last)             //   O(m)
+   m.clear()                        //   O(n)
+
+   // operations
+   m.find(val)                      //   O(log n)
+   m.count(val)                     //   O(log n)
+   m.lower_bound(val)               //   O(log n)
+   m.upper_bound(val)               //   O(log n)
+   m.equal_range(val)               //   O(log n)
+
+   // iterator
+   map<Type, Type>::iterator it;
+   for (it = m.begin(); it != m.end(); ++ it)
+      cout << it -> first << it -> second;
+----------------------------------------
+C. multimap
+   #include <map>
+   multiset<Type1, Type2> m
+
+   // capacity
+   m.empty()                        //   O(1)
+   m.size()                         //   O(1)
+
+   // access
+   m[key]                           //   log(n)
+
+   // modifiers
+   m.insert(val)                    //   O(log n)
+   m.insert(front, last)            //   O(m log (n+m))
+
+   m.erase(pos)                     //   O(1)
+   m.erase(val)                     //   O(log n)
+   m.erase(front, last)             //   O(m)
+   m.clear()                        //   O(n)
+
+   // operations
+   m.find(val)                      //   O(log n)
+   m.count(val)                     //   O(log n + m)
+   m.lower_bound(val)               //   O(log n)
+   m.upper_bound(val)               //   O(log n)
+   m.equal_range(val)               //   O(log n)
+----------------------------------------
+D. unordered_set 
+   #include <unordered_set>
+   unordered_set<Type> s
+
+   // capacity
+   s.empty()                        //   O(1)
+   s.size()                         //   O(1)
+
+   // lookup
+   s.find()                         //   O(1 ~ n)
+   s.count()                        //   O(1 ~ n)
+
+   // modifiers
+   s.insert(val)                    //   O(1 ~ n)
+   s.insert(front, last)            //   O(m ~ m * (n+1))
+
+   s.erase(pos)                     //   O(1 ~ n)
+   s.erase(val)                     //   O(1 ~ n)
+   s.erase(front, last)             //   O(m ~ n)
+   s.clear()                        //   O(n)
+----------------------------------------
+E. unordered_multiset 
+   #include <unordered_set>
+   unordered_multiset<Type> s
+
+   // capacity
+   s.empty()                        //   O(1)
+   s.size()                         //   O(1)
+
+   // lookup
+   s.find()                         //   O(1 ~ n)
+   s.count()                        //   O(m ~ n)
+
+   // modifiers
+   s.insert(val)                    //   O(1 ~ n)
+   s.insert(front, last)            //   O(m ~ m * (n+1))
+
+   s.erase(pos)                     //   O(1 ~ n)
+   s.erase(val)                     //   O(1 ~ n)
+   s.erase(front, last)             //   O(m ~ n)
+   s.clear()                        //   O(n)
+----------------------------------------
+F. unordered_map 
+   #include <unordered_map>
+   unordered_map<Type1, Type2> m
+
+   // capacity
+   m.empty()                        //   O(1)
+   m.size()                         //   O(1)
+
+   // access
+   m[key]                           //   O(1 ~ n)
+
+   // lookup
+   m.find()                         //   O(1 ~ n)
+   m.count()                        //   O(1 ~ n)
+
+   // modifiers
+   m.insert(val)                    //   O(1 ~ n)
+   m.insert(front, last)            //   O(m ~ m * (n+1))
+
+   m.erase(pos)                     //   O(1 ~ n)
+   m.erase(val)                     //   O(1 ~ n)
+   m.erase(front, last)             //   O(m ~ n)
+   m.clear()                        //   O(n)
+----------------------------------------
+G. unordered_multimap 
+   #include <unordered_map>
+   unordered_multimap<Type1, Type2> m
+
+   // capacity
+   m.empty()                        //   O(1)
+   m.size()                         //   O(1)
+
+   // access
+   m[key]                           //   O(1 ~ n)
+
+   // lookup
+   m.find()                         //   O(1 ~ n)
+   m.count()                        //   O(m ~ n)
+
+   // modifiers
+   m.insert(val)                    //   O(1 ~ n)
+   m.insert(front, last)            //   O(m ~ m * (n+1))
+
+   m.erase(pos)                     //   O(1 ~ n)
+   m.erase(val)                     //   O(1 ~ n)
+   m.erase(front, last)             //   O(m ~ n)
+   m.clear()                        //   O(n)
+----------------------------------------
